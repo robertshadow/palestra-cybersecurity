@@ -1,0 +1,12 @@
+:root{--bg:#07111f;--card:#0c1a2b;--text:#eef6ff;--muted:#a9bdd0;--accent:#56e39f;--warn:#ffcc66;--line:#20354b}
+*{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 50% -10%,#173a59 0,#07111f 42%);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;min-height:100vh}
+.wrap{width:min(760px,92vw);margin:0 auto;padding:7vh 0 3vh}.card{display:none;background:rgba(12,26,43,.96);border:1px solid var(--line);border-radius:24px;padding:clamp(24px,5vw,48px);box-shadow:0 24px 80px rgba(0,0,0,.35)}.card.active{display:block;animation:in .35s ease}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.eyebrow,.warning{font-size:.78rem;letter-spacing:.16em;font-weight:800;color:var(--accent);margin-bottom:12px}.warning{color:var(--warn)}
+h1{font-size:clamp(2rem,7vw,3.5rem);line-height:1.02;margin:.1em 0 .45em}.lead{color:var(--muted);font-size:1.08rem;line-height:1.6}.items,.steps{display:grid;gap:12px;margin:28px 0}.items div,.steps article,.grid article,.safe{padding:16px;border:1px solid var(--line);border-radius:14px;background:#0a1726}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0}.grid article,.steps article{display:flex;flex-direction:column;gap:6px}.grid span,.steps span{color:var(--muted);line-height:1.4}.safe{border-color:#275e4b;color:#c9f7e2;margin:20px 0}
+button{width:100%;border:0;border-radius:14px;padding:16px 18px;font-weight:800;font-size:1rem;background:var(--accent);color:#052014;cursor:pointer;margin-top:14px}button:active{transform:translateY(1px)}
+label{display:block;margin:26px 0 8px;font-weight:700}input{width:100%;padding:16px;border-radius:14px;border:1px solid var(--line);background:#07111f;color:var(--text);font-size:1rem}
+.privacy{color:#7890a7;font-size:.83rem;line-height:1.4}.question{font-weight:700;line-height:1.5;margin-top:28px}blockquote{margin:24px 0;padding:18px 20px;border-left:4px solid var(--accent);background:#0a1726;color:#dcecff;line-height:1.5}
+footer{width:min(760px,92vw);margin:0 auto;padding:0 0 30px;text-align:center;color:#61788e;font-size:.75rem}
+code{color:#b9e7ff}@media(max-width:560px){.grid{grid-template-columns:1fr}.wrap{padding-top:3vh}.card{border-radius:18px}}

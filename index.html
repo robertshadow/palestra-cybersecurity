@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Material da Palestra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <section id="screen1" class="card active">
+    <div class="eyebrow">CONTEÚDO COMPLEMENTAR</div>
+    <h1>Material da palestra</h1>
+    <p class="lead">Obrigado por participar. O conteúdo complementar foi preparado para você consultar após a apresentação.</p>
+    <div class="items">
+      <div>✓ Apresentação e referências</div>
+      <div>✓ Ferramentas demonstradas</div>
+      <div>✓ Checklist anti-phishing</div>
+      <div>✓ Certificado de participação</div>
+    </div>
+    <button id="continue1">Continuar</button>
+    <p class="privacy">Esta página não solicita login.</p>
+  </section>
+
+  <section id="screen2" class="card">
+    <div class="warning">⚠ TESTE DE ENGENHARIA SOCIAL</div>
+    <h1>Você confiou no QR Code.</h1>
+    <p class="lead">Ele foi apresentado por alguém que você conheceu há pouco tempo e prometia algo coerente com o contexto da palestra.</p>
+    <div class="grid">
+      <article><b>Autoridade</b><span>O QR Code veio do palestrante.</span></article>
+      <article><b>Contexto</b><span>Receber material da palestra parece normal.</span></article>
+      <article><b>Recompensa</b><span>Material, referências e certificado.</span></article>
+      <article><b>Baixo esforço</b><span>Bastava apontar a câmera e tocar.</span></article>
+    </div>
+    <div class="safe">Nenhuma credencial ou dado pessoal foi solicitado ou coletado por esta demonstração.</div>
+    <button id="continue2">Entendi. Continuar</button>
+  </section>
+
+  <section id="screen3" class="card">
+    <div class="eyebrow">MAIS UM TESTE</div>
+    <h1>Quer receber o certificado?</h1>
+    <p class="lead">Informe seu e-mail institucional para receber o certificado da atividade.</p>
+    <label for="fakeEmail">E-mail institucional</label>
+    <input id="fakeEmail" type="text" inputmode="email" autocomplete="off" placeholder="nome@universidade.edu.br" readonly aria-describedby="noCollect">
+    <button id="fakeSubmit">Receber certificado</button>
+    <p id="noCollect" class="privacy">Demonstração educacional — nenhum dado será enviado.</p>
+  </section>
+
+  <section id="screen4" class="card">
+    <div class="warning">SEGUNDA REVELAÇÃO</div>
+    <h1>Você quase forneceu outro dado.</h1>
+    <p class="lead">Mesmo depois de descobrir o primeiro teste, a promessa de uma recompensa ainda pode influenciar a decisão.</p>
+    <div class="safe">O campo anterior é propositalmente bloqueado. Ele não aceita, armazena nem transmite e-mails.</div>
+    <blockquote>O objetivo não é descobrir quem “caiu”. É perceber como contexto e confiança influenciam decisões.</blockquote>
+    <button id="continue4">Ver o checklist</button>
+  </section>
+
+  <section id="screen5" class="card">
+    <div class="eyebrow">ANTES DE CLICAR</div>
+    <h1>Pare → Observe → Verifique</h1>
+    <div class="steps">
+      <article><b>1. Pare</b><span>Urgência é um gatilho. Não deixe a mensagem decidir seu ritmo.</span></article>
+      <article><b>2. Observe</b><span>Confira domínio, remetente, destino do link, contexto e o que está sendo solicitado.</span></article>
+      <article><b>3. Verifique</b><span>Confirme por outro canal conhecido antes de fornecer dados, aprovar MFA ou pagar.</span></article>
+    </div>
+    <p class="question">Agora que você sabe que esta página fazia parte de um teste, em que você confiaria para validar o próximo link?</p>
+    <button id="realMaterial">Acessar material real</button>
+    <p class="privacy">O botão acima usa o endereço configurado pelo palestrante em <code>script.js</code>.</p>
+  </section>
+</main>
+
+<footer>Demonstração educacional de conscientização em cibersegurança • sem analytics • sem backend de coleta</footer>
+<script src="script.js"></script>
+</body>
+</html>
