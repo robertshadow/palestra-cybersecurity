@@ -1,51 +1,27 @@
-# Demonstração de Engenharia Social — QR Code
+# Dinâmica de Engenharia Social v2
 
-## Objetivo
-Landing page estática para uma dinâmica educacional de engenharia social.
-Não há backend, formulário funcional, analytics ou código de coleta de dados.
+Versão com humor + aprendizagem. Removida a segunda pegadinha de e-mail.
 
-## Fluxo
-1. Material da palestra
-2. Revelação do teste
-3. Simulação de solicitação de e-mail (campo bloqueado/read-only)
-4. Segunda revelação
-5. Checklist "Pare → Observe → Verifique"
-6. Link para o material real
+## Publicação no GitHub Pages
+Substitua `index.html`, `style.css` e `script.js` no repositório e execute:
 
-## Antes de publicar
-Abra `script.js` e substitua:
-`https://example.org/material-real`
-pela URL do material verdadeiro.
+    git add .
+    git commit -m "Atualiza dinamica com humor"
+    git push
 
-## Publicação
-Pode ser hospedado como site estático em GitHub Pages, Cloudflare Pages,
-Netlify ou servidor web institucional. Publique os três arquivos na mesma pasta:
-- index.html
-- style.css
-- script.js
+## Material verdadeiro
+Antes do evento, altere `MATERIAL_REAL_URL` em `script.js`.
 
-## Privacidade
-O código fornecido não contém:
-- analytics;
-- cookies próprios;
-- formulários enviados;
-- captura de e-mail;
-- captura de senha;
-- fingerprint;
-- chamadas fetch/XHR;
-- backend.
+## Roteiro
+1. Apresente o QR Code casualmente como material complementar.
+2. Aguarde 30–40 segundos e pergunte: “Deu certo aí?”
+3. Após confirmações: “Excelente... só uma dúvida.”
+4. Pausa.
+5. “Vocês acabaram de escanear um QR Code apresentado por um hacker numa palestra sobre phishing?”
+6. Deixe a reação acontecer.
+7. “Gente... eu esperava um pouquinho mais de resistência.”
+8. Peça que avancem em “Tá bom... me explica.”
+9. Mude o tom e explique Autoridade, Contexto, Recompensa e Baixo esforço.
+10. Feche: “Eu não precisei explorar uma vulnerabilidade. Eu criei um contexto em que clicar parecia natural.”
 
-Observação: o provedor de hospedagem pode manter logs técnicos próprios (por exemplo,
-IP e user-agent) conforme a política dele. Se a exigência for não haver logs de
-terceiros, hospede na infraestrutura aprovada pela universidade.
-
-## QR Code
-Gere o QR Code SOMENTE depois de conhecer a URL pública definitiva.
-Antes da palestra, teste em Android e iPhone, em 4G/5G e Wi-Fi da instituição.
-
-## Ensaio recomendado
-- Deixe o QR Code na tela por 30–60 segundos.
-- Pergunte "Quem conseguiu acessar?"
-- Faça a primeira revelação.
-- Não identifique participantes individualmente.
-- Use a segunda simulação apenas como reflexão, sem pedir dado real.
+O código não contém formulários, analytics, cookies próprios, captura de credenciais ou armazenamento. O provedor de hospedagem pode manter logs técnicos próprios.
